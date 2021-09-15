@@ -1,7 +1,9 @@
 
 function App() {
   return (
-    <div>Imoney</div>
+    <div>
+      <h2>Imoney</h2>
+    </div>
   );
 }
 
