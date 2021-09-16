@@ -1,0 +1,78 @@
+/* ========= Fonts ========= */
+@font-face {
+    font-family: 'Heebo';
+    font-weight: 300;
+    font-size: normal;
+    src: local('Heebo') url(./fonts/Heebo-Light.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-weight: 400;
+    font-size: normal;
+    src: local('Heebo') url(./fonts/Heebo-Regular.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-weight: 500;
+    font-size: normal;
+    src: local('Heebo') url(./fonts/Heebo-Medium.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-weight: 600;
+    font-size: normal;
+    src: local('Heebo') url(./fonts/Heebo-SemiBold.ttf) format('opentype');
+}
+@font-face {
+    font-family: 'Heebo';
+    font-weight: 600;
+    font-size: normal;
+    src: local('Heebo') url(./fonts/Heebo-Bold.ttf) format('opentype');
+}
+/* ========= Fonts ========= */
+
+
+:root {
+    --color-primary: #F2C94C;
+    --color-primary-dark: #EA9634;
+
+    --color-background: #f5f5f5;
+    --color-success: #91E043;
+    --color-danger: #EE6767;
+    --color-success-dark: #38D12A;
+    --color-danger-dark: #E84545;
+
+
+    --color-blue-light: #7ED0FE;
+    --color-blue-dark: #5D5FEF;
+    
+    --grey-dark-1: #333333;
+    --color-white: #ffffff;
+}
+
+/* ========= BASE CSS ======= */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    line-height: 2rem;
+    background-color: var(--background-color);
+    background-image: url(assets/images/vector.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 16px;
+}
