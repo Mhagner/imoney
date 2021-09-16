@@ -9,4 +9,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Added
 
-- T-1 Configurações iniciais do projeto
+- T-1 Configurações iniciais do projeto, rotas, e home page
