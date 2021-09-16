@@ -1,0 +1,84 @@
+.cardBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-primary);
+    padding: 16px;
+    text-align: center;
+    color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardBox__contentValue {
+    margin-bottom: 16px;
+}
+
+.cardBox p {
+    font-size: 12px;
+    margin-bottom: 16px;
+}
+
+.cardBox span {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.cardBox__Button {
+    background-color: var(--color-primary-dark);
+    padding: 8px;
+    width: 60%;
+    border-radius: 8px;
+    color: var(--color-white);
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    
+}
+
+.cardReceita,
+.cardDespesa {
+    min-width: 145px;
+    padding: 8px;
+    align-items: left !important;
+}
+
+.cardReceita {
+    background-color: var(--color-success);
+}
+
+.cardDespesa {
+    background-color: var(--color-danger);
+}
+
+.cardReceita span, 
+.cardDespesa span {
+    font-size: 18px;
+}
+
+.colCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardReceita .cardBox__contentValue,
+.cardDespesa .cardBox__contentValue {
+    text-align: left;
+}
+
+.cardReceita .cardBox__Button,
+.cardDespesa .cardBox__Button {
+    width: 80%;
+}
+
+.cardReceita .cardBox__Button {
+    background-color: var(--color-success-dark);
+}
+
+.cardDespesa .cardBox__Button {
+    background-color: var(--color-danger-dark);
+}
+
+.cardTotal {
+    margin-bottom: 20px;
+}
