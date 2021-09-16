@@ -1,10 +1,13 @@
-import CardBox from './components/CardBox/CardBox'
+import { Router } from 'react-router-dom'
+
+import Routes from './routes'
+import history from './history'
 
 function App() {
   return (
-    <div>
-     <h2>Imoney</h2>
-    </div>
+    <Router history={history}>
+     <Routes />
+    </Router>
   );
 }
 
