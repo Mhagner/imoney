@@ -1,7 +1,15 @@
+import { Router } from 'react-router-dom'
+
+import './global.css'
+
+import Routes from './routes'
+import history from './history'
 
 function App() {
   return (
-    <div>Imoney</div>
+    <Router history={history}>
+     <Routes />
+    </Router>
   );
 }
 
