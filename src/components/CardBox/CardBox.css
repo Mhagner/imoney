@@ -37,10 +37,9 @@
 }
 
 .cardReceita,
-.cardDespesa {
-    min-width: 145px;
+.cardDespesa {  
+    min-width: 46%;
     padding: 8px;
-    align-items: left !important;
 }
 
 .cardReceita {
@@ -63,7 +62,7 @@
 
 .cardReceita .cardBox__contentValue,
 .cardDespesa .cardBox__contentValue {
-    text-align: left;
+    text-align: center;
 }
 
 .cardReceita .cardBox__Button,
@@ -81,4 +80,9 @@
 
 .cardTotal {
     margin-bottom: 20px;
+}
+
+.cardEconomiaPercent {
+    margin-top: 24px;
+    background-color: #7ED0FE;
 }

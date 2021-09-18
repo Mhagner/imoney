@@ -28,7 +28,11 @@ const Home = () => {
                     url="#"
                 />
             </div>
-
+            <CardBox
+                title="Economia no mês"
+                value="36%"
+                className="cardEconomiaPercent"
+            />
         </div>
     )
 }
