@@ -8,13 +8,15 @@ const CardBox = ({ className, title, value, buttonValue, url }) => {
         <div className={`cardBox ${className}`}>
             <div className='cardBox__contentValue'>
                 <p>{title}</p>
-                <span>R$ {value}</span>
+                <span>{value}</span>
             </div>
-            <Link
-                to={url}
-                className='cardBox__Button'>
-                {buttonValue}
-            </Link>
+            {buttonValue &&
+                <Link
+                    to={url}
+                    className='cardBox__Button'>
+                    {buttonValue}
+                </Link>
+            }
         </div>
     )
 
