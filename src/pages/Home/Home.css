@@ -1,3 +1,10 @@
 .colCards {
     display: flex;
 }
+
+.contentButtonsActions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding: 0 8px;
+}
