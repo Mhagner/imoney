@@ -1,4 +1,6 @@
+import ButtonAction from '../../components/ButtonAction/ButtonAction'
 import CardBox from '../../components/CardBox/CardBox'
+import { IconMinus, IconPlus, IconChart } from '../../components/Icons/Icons'
 
 import './Home.css'
 
@@ -27,6 +29,17 @@ const Home = () => {
                     buttonValue="Ver detalhes"
                     url="#"
                 />
+            </div>
+            <div className="contentButtonsActions">
+                <ButtonAction>
+                    <IconPlus />
+                </ButtonAction>
+                <ButtonAction>
+                    <IconMinus />
+                </ButtonAction>
+                <ButtonAction>
+                    <IconChart />
+                </ButtonAction>
             </div>
             <CardBox
                 title="Economia no mês"
