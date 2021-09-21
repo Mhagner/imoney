@@ -1,5 +1,6 @@
 import ButtonAction from '../../components/ButtonAction/ButtonAction'
 import CardBox from '../../components/CardBox/CardBox'
+import Header from '../../components/Header/Header'
 import { IconMinus, IconPlus, IconChart } from '../../components/Icons/Icons'
 
 import './Home.css'
@@ -7,6 +8,7 @@ import './Home.css'
 const Home = () => {
     return (
         <div>
+            <Header />
             <CardBox
                 title="Saldo Total"
                 value={2000.56}
