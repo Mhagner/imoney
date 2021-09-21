@@ -12,4 +12,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - T-1 Configurações iniciais do projeto, rotas, e home page
 - T-6 CardBox layout - valor total, percetual de economia, receita e despesa
 - t-7 Botões de ações receita, despesa e relatório
-- 
