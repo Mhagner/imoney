@@ -1,0 +1,21 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+
+.contentLogin {
+    padding: 8px;
+}
+
+@media (min-width: 1026px) {
+    .contentLogin {
+        border: 1px solid #f1f1f1;
+        background-color: #fff;
+        border-radius: 8px;
+        min-width: 400px;
+        padding: 24px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    }
+}

@@ -1,8 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ErrorMessage, Field, Formik, Form } from 'formik'
 import * as yup from 'yup'
 
 import './LoginForm.css'
+import { IconSecurity } from '../Icons/Icons'
 
 const LoginForm = ({ handleSubmit }) => {
     const validations = yup.object().shape({
@@ -18,7 +20,7 @@ const LoginForm = ({ handleSubmit }) => {
         >
             <Form className="loginForm">
                 <div className="groupField">
-                    <label>Email</label>
+                    <label>E-mail</label>
                     <Field
                         name="email"
                         className="inputField"
@@ -34,6 +36,7 @@ const LoginForm = ({ handleSubmit }) => {
                     <Field
                         name="password"
                         className="inputField"
+                        type="password"
                     />
                     <ErrorMessage
                         component="span"
@@ -41,12 +44,17 @@ const LoginForm = ({ handleSubmit }) => {
                         className="inputError"
                     />
                 </div>
+                <Link to="#">Esqueci minha senha</Link>
                 <button
                     className="buttonSubmit"
                     type="submit"
                 >
+                    <IconSecurity />
                     Entrar
                 </button>
+                <Link to="#">
+                    Ainda não tem uma conta? crie uma agora mesmo por aqui
+                </Link>
             </Form>
         </Formik>
     )

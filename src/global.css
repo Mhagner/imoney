@@ -45,8 +45,11 @@
 
     --color-blue-light: #7ED0FE;
     --color-blue-dark: #5D5FEF;
+
+    --color-link: #3B3C90;
     
     --grey-dark-1: #333333;
+    --grey-light: #E9E7E5;
     --color-white: #ffffff;
 }
 
