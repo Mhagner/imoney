@@ -1,9 +1,9 @@
 import './ButtonSubmit.css'
 
-const ButtonSubmit = ({ buttonLabel }) => {
+const ButtonSubmit = ({ buttonLabel, className }) => {
     return (
         <button
-            className="buttonSubmit"
+            className={`buttonSubmit ${className}`}
             type="submit"
         >
             {buttonLabel}
