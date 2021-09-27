@@ -1,11 +1,11 @@
-import LogoDark from '../../assets/images/logo-dark.png';
+import LogoImg from '../../assets/images/logo.png';
 import './Logo.css';
 
 const Logo = ({ type = 'dark', width, height }) => {
     return (
         <div className="logoContainer">
             <img
-                src={LogoDark}
+                src={LogoImg}
                 alt="logo"
                 width={width}
                 height={height}

@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import { ErrorMessage, Field, Formik, Form } from 'formik'
+import { Formik, Form } from 'formik'
 import * as yup from 'yup'
 
+import InputField from '../../components/InputField/InputField'
 import './LoginForm.css'
-import { IconSecurity } from '../Icons/Icons'
+import Redirect from '../Redirect/Redirect'
+import ButtonSubmit from '../ButtonSubmit/ButtonSubmit'
 
 const LoginForm = ({ handleSubmit }) => {
     const validations = yup.object().shape({
@@ -19,42 +20,22 @@ const LoginForm = ({ handleSubmit }) => {
             validationSchema={validations}
         >
             <Form className="loginForm">
-                <div className="groupField">
-                    <label>E-mail</label>
-                    <Field
-                        name="email"
-                        className="inputField"
-                    />
-                    <ErrorMessage
-                        component="span"
-                        name="email"
-                        className="inputError"
-                    />
-                </div>
-                <div className="groupField">
-                    <label>Senha</label>
-                    <Field
-                        name="password"
-                        className="inputField"
-                        type="password"
-                    />
-                    <ErrorMessage
-                        component="span"
-                        name="password"
-                        className="inputError"
-                    />
-                </div>
-                <Link to="#">Esqueci minha senha</Link>
-                <button
-                    className="buttonSubmit"
-                    type="submit"
-                >
-                    <IconSecurity />
-                    Entrar
-                </button>
-                <Link to="#">
-                    Ainda não tem uma conta? crie uma agora mesmo por aqui
-                </Link>
+                <InputField
+                    label="E-mail"
+                    name="email"
+                    type="email"
+                />
+                <InputField
+                    label="Senha"
+                    name="password"
+                    type="password"
+                />
+                <Redirect>
+                    Esqueceu a sua senha?
+                </Redirect>
+                <ButtonSubmit
+                    buttonLabel="Entrar"
+                />
             </Form>
         </Formik>
     )

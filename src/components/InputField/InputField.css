@@ -1,0 +1,43 @@
+.groupField label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    padding-right: 20%;
+    color: var(--color-text);
+}
+
+.groupField label {
+    color: var(--grey-dark-1);
+}
+
+.groupField {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+    position: relative;
+}
+
+.groupField input {
+    height: 48px;
+    border: none;
+    background-color: var(--color-input);
+    outline: none;
+    font-size: 18px;
+    color: var(--grey-dark-1);
+    padding: 0 16px;
+    border: 1px solid var(--primary-color);
+}
+
+.groupField input:focus {
+    border: 2px solid var(--primary-color);
+}
+
+.inputError {
+    position: absolute;
+    top: 85%;
+    /* bottom: 0px; */
+    right: 6px;
+    padding: 4px;
+    background: rgb(232, 69, 69, 0.5);
+    border-radius: 4px;
+    color: white;
+}

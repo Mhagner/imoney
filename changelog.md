@@ -14,3 +14,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - t-7 Botões de ações receita, despesa e relatório
 - t-9 Header, menu, profile.
 - Fix revert code t-9
+- T-8 Página de login

@@ -34,6 +34,8 @@
 
 :root {
     --color-primary: #F2C94C;
+    
+    --primary-color: #A9077D;
     --color-primary-dark: #EA9634;
 
     --color-background: #f5f5f5;
@@ -42,6 +44,8 @@
     --color-success-dark: #38D12A;
     --color-danger-dark: #E84545;
 
+    --color-input: rgba(233, 231, 229, 0.35);
+    --color-text: #9C9595;
 
     --color-blue-light: #7ED0FE;
     --color-blue-dark: #5D5FEF;
@@ -73,8 +77,6 @@ html {
 body {
     font-family: 'Heebo', sans-serif;
     line-height: 2rem;
-    background-color: var(--background-color);
-    background-image: url(assets/images/vector.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 16px;
