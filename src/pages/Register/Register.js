@@ -1,29 +1,29 @@
-import LoginForm from '../../components/LoginForm/LoginForm';
+import RegisterForm from '../../components/RegisterForm/RegisterForm';
 import Logo from '../../components/Logo/Logo';
-import './Login.css';
 import history from '../../history';
 import Redirect from '../../components/Redirect/Redirect';
 
-const Login = () => {
+import './Register.css'
+
+const Register = () => {
     return (
-        <div className="login">
-            <div className="contentLogin">
+        <div className="register">
+            <div className="contentRegister">
                 <Logo
                     width={200}
                     height={80}
                 />
-                <LoginForm
-                    errors="error teste"
+                <RegisterForm
                     handleSubmit={() => history.push('/home')}
                 />
                 <Redirect
-                    url="/register"
+                    url='/login'
                 >
-                    Ainda não tem uma conta? crie uma agora mesmo por aqui
+                    Já possui uma conta? entre por aqui
                 </Redirect>
             </div>
         </div>
     )
 }
 
-export default Login
+export default Register

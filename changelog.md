@@ -15,3 +15,4 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - t-9 Header, menu, profile.
 - Fix revert code t-9
 - T-8 Página de login
+- T-11 Página de registro
