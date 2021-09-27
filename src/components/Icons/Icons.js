@@ -66,3 +66,16 @@ export const IconProfile = ({ width = 26, height = 25, color = "#4F4F4F" }) => (
             fill={color} />
     </svg>
 )
+
+export const IconSecurity = ({ width = 12, height = 17, color = "#ffffff" }) => (
+    <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M11.1 6.8H10.8V3.4C10.8 1.52547 9.1848 0 7.2 0H4.8C2.8152 0 1.2 1.52547 1.2 3.4V6.8H0.9C0.405 6.8 0 7.1825 0 7.65V16.15C0 16.6175 0.405 17 0.9 17H11.1C11.595 17 12 16.6175 12 16.15V7.65C12 7.1825 11.595 6.8 11.1 6.8ZM3.6 3.4C3.6 2.77497 4.1382 2.26667 4.8 2.26667H7.2C7.8618 2.26667 8.4 2.77497 8.4 3.4V6.8H3.6V3.4Z"
+            fill={color} />
+    </svg>
+)
