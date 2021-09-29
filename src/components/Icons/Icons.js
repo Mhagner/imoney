@@ -67,15 +67,31 @@ export const IconProfile = ({ width = 26, height = 25, color = "#4F4F4F" }) => (
     </svg>
 )
 
-export const IconSecurity = ({ width = 12, height = 17, color = "#ffffff" }) => (
+export const IconArrowLeft = ({ width = 32, height = 32, color = "#A9077D" }) => (
     <svg
         width={width}
         height={height}
         viewBox={`0 0 ${width} ${height}`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M11.1 6.8H10.8V3.4C10.8 1.52547 9.1848 0 7.2 0H4.8C2.8152 0 1.2 1.52547 1.2 3.4V6.8H0.9C0.405 6.8 0 7.1825 0 7.65V16.15C0 16.6175 0.405 17 0.9 17H11.1C11.595 17 12 16.6175 12 16.15V7.65C12 7.1825 11.595 6.8 11.1 6.8ZM3.6 3.4C3.6 2.77497 4.1382 2.26667 4.8 2.26667H7.2C7.8618 2.26667 8.4 2.77497 8.4 3.4V6.8H3.6V3.4Z"
+        <path d="M16 32C24.837 32 32 24.837 32 16C32 7.163 24.837 0 16 0C7.163 0 0 7.163 0 16C0 24.837 7.163 32 16 32ZM16 3C23.18 3 29 8.82 29 16C29 23.18 23.18 29 16 29C8.82 29 3 23.18 3 16C3 8.82 8.82 3 16 3Z"
+            fill={color} />
+        <path d="M20.914 9.91399L18.085 7.08499L9.17099 15.999L18.085 24.913L20.913 22.085L14.827 15.999L20.914 9.91399Z"
             fill={color} />
     </svg>
+)
+
+export const IconArrowRight = ({ width = 32, height = 32, color = "#A9077D" }) => (
+    <svg
+        width={width}
+        height={height}
+        viewBox={`0 0 ${width} ${height}`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 0C7.163 0 0 7.163 0 16C0 24.837 7.163 32 16 32C24.837 32 32 24.837 32 16C32 7.163 24.837 0 16 0ZM16 29C8.82 29 3 23.18 3 16C3 8.82 8.82 3 16 3C23.18 3 29 8.82 29 16C29 23.18 23.18 29 16 29Z"
+            fill={color} />
+        <path d="M11.086 22.086L13.915 24.915L22.829 16.001L13.915 7.08701L11.087 9.91501L17.173 16.001L11.086 22.086Z"
+            fill={color} />
+    </svg>
+
 )
