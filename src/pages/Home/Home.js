@@ -22,14 +22,14 @@ const Home = () => {
             />
             <div className="colCards">
                 <CardBox
-                    title="Saldo Total"
+                    title="Receitas"
                     value={2000.56}
                     className="cardReceita"
                     buttonValue="Ver detalhes"
                     url="#"
                 />
                 <CardBox
-                    title="Saldo Total"
+                    title="Despesas"
                     value={2000.56}
                     className="cardDespesa"
                     buttonValue="Ver detalhes"
