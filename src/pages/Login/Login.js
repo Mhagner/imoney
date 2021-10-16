@@ -14,7 +14,7 @@ const Login = () => {
                 />
                 <LoginForm
                     errors="error teste"
-                    handleSubmit={() => history.push('/home')}
+                    handleSubmit={() => history.push('/')}
                 />
                 <Redirect
                     url="/register"

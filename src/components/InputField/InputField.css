@@ -24,11 +24,11 @@
     font-size: 18px;
     color: var(--grey-dark-1);
     padding: 0 16px;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--color-primary);
 }
 
 .groupField input:focus {
-    border: 2px solid var(--primary-color);
+    border: 2px solid var(--color-primary);
 }
 
 .inputError {
