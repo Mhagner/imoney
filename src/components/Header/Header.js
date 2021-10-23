@@ -1,4 +1,3 @@
-import Arrows from "../Arrows/Arrows"
 import MenuMobile from "../MenuMobile/MenuMobile"
 import Profile from "../Profile/Profile"
 import "./Header.css"

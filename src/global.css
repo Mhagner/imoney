@@ -1,60 +1,60 @@
 /* ========= Fonts ========= */
 @font-face {
-    font-family: 'Heebo';
+    font-family: "Heebo";
     font-weight: 300;
     font-size: normal;
-    src: local('Heebo') url(./fonts/Heebo-Light.ttf) format('opentype');
+    src: local("Heebo") url(./fonts/Heebo-Light.ttf) format("opentype");
 }
 @font-face {
-    font-family: 'Heebo';
+    font-family: "Heebo";
     font-weight: 400;
     font-size: normal;
-    src: local('Heebo') url(./fonts/Heebo-Regular.ttf) format('opentype');
+    src: local("Heebo") url(./fonts/Heebo-Regular.ttf) format("opentype");
 }
 @font-face {
-    font-family: 'Heebo';
+    font-family: "Heebo";
     font-weight: 500;
     font-size: normal;
-    src: local('Heebo') url(./fonts/Heebo-Medium.ttf) format('opentype');
+    src: local("Heebo") url(./fonts/Heebo-Medium.ttf) format("opentype");
 }
 @font-face {
-    font-family: 'Heebo';
+    font-family: "Heebo";
     font-weight: 600;
     font-size: normal;
-    src: local('Heebo') url(./fonts/Heebo-SemiBold.ttf) format('opentype');
+    src: local("Heebo") url(./fonts/Heebo-SemiBold.ttf) format("opentype");
 }
 @font-face {
-    font-family: 'Heebo';
+    font-family: "Heebo";
     font-weight: 600;
     font-size: normal;
-    src: local('Heebo') url(./fonts/Heebo-Bold.ttf) format('opentype');
+    src: local("Heebo") url(./fonts/Heebo-Bold.ttf) format("opentype");
 }
 /* ========= Fonts ========= */
 
-
 :root {
-    --color-primary: #A9077D;
-    --color-primary-dark: #EA9634;
+    --color-primary: #a9077d;
+    --color-primary-dark: #ea9634;
+    --color-secondary: #f52a8e;
 
     --color-background: #f5f5f5;
-    --color-success: #91E043;
-    --color-danger: #EE6767;
-    --color-success-dark: #38D12A;
-    --color-danger-dark: #E84545;
+    --color-success: #91e043;
+    --color-danger: #ee6767;
+    --color-success-dark: #38d12a;
+    --color-danger-dark: #e84545;
 
     --color-input: rgba(233, 231, 229, 0.35);
-    --color-text: #9C9595;
+    --color-text: #9c9595;
 
-    --color-blue-light: #7ED0FE;
-    --color-blue-dark: #5D5FEF;
+    --color-blue-light: #7ed0fe;
+    --color-blue-dark: #5d5fef;
 
-    --color-link: #3B3C90;
-    
+    --color-link: #3b3c90;
+
     --grey-dark-1: #333333;
-    --grey-light: #E9E7E5;
+    --grey-light: #e9e7e5;
     --color-white: #ffffff;
 
-    --color-text: #9C9595;
+    --color-text: #9c9595;
 }
 
 /* ========= BASE CSS ======= */
@@ -75,7 +75,7 @@ html {
 }
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: "Heebo", sans-serif;
     line-height: 2rem;
     background-repeat: no-repeat;
     background-size: cover;

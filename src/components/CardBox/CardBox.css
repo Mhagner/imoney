@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
     padding: 16px;
     text-align: center;
     color: var(--color-white);
@@ -25,7 +25,7 @@
 }
 
 .cardBox__Button {
-    background-color: var(--color-primary-dark);
+    background-color: transparent;
     padding: 8px;
     width: 60%;
     border-radius: 8px;
@@ -33,11 +33,18 @@
     font-size: 12px;
     font-weight: 600;
     text-decoration: none;
-    
+    border: 2px solid #fff;
+    transition: all 0.5s;
+}
+
+.cardBox__Button:hover {
+    background-color: #fff;
+    color: var(--color-text);
+    transform: scale(1.1);
 }
 
 .cardReceita,
-.cardDespesa {  
+.cardDespesa {
     min-width: 46%;
     padding: 8px;
 }
@@ -50,7 +57,7 @@
     background-color: var(--color-danger);
 }
 
-.cardReceita span, 
+.cardReceita span,
 .cardDespesa span {
     font-size: 20px;
 }
@@ -70,19 +77,48 @@
     width: 80%;
 }
 
-.cardReceita .cardBox__Button {
-    background-color: var(--color-success-dark);
-}
-
-.cardDespesa .cardBox__Button {
-    background-color: var(--color-danger-dark);
-}
-
 .cardTotal {
     margin-bottom: 20px;
 }
 
 .cardEconomiaPercent {
     margin-top: 24px;
-    background-color: #7ED0FE;
+    background-color: #eee;
+    box-shadow: none;
+    color: var(--color-secondary);
+    width: 230px;
+}
+
+.cardEconomiaPercent {
+    margin-top: 24px;
+    background-color: #fff;
+    color: var(--color-secondary);
+    width: 230px;
+    /*    box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #f1f1f1;
+    transition: all 0.2s;
+}
+
+.cardEconomiaPercent span {
+    font-size: 24px;
+}
+
+.cardEconomiaPercent p {
+    font-size: 12px;
+}
+
+.cardEconomiaPercent:not(:last-child) {
+    margin-right: 16px;
+}
+
+@media (min-width: 1026px) {
+    .cardEconomiaPercent {
+        max-width: 160px;
+        min-width: none;
+        height: 130px;
+    }
+
+    .cardEconomiaPercent:hover {
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+    }
 }

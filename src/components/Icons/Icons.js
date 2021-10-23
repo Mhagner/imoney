@@ -95,3 +95,17 @@ export const IconArrowRight = ({ width = 32, height = 32, color = "#A9077D" }) =
     </svg>
 
 )
+
+export const IconList = ({ width = 32, height = 32, color = "#F2C94C" }) => (
+    <svg
+        width={width}
+        height={height}
+        viewBox="0 0 32 32"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M0 0H8V8H0V0ZM12 2H32V6H12V2ZM0 12H8V20H0V12ZM12 14H32V18H12V14ZM0 24H8V32H0V24ZM12 26H32V30H12V26Z"
+            fill={color} />
+    </svg>
+)
+
