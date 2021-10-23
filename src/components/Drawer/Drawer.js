@@ -9,9 +9,10 @@ import {
     ListItemText,
     Box,
 } from '@material-ui/core'
-import { InsertChart, Mail } from '@material-ui/icons';
 
-export default function SwipeableTemporaryDrawer({ children, direction, className }) {
+import './Drawer.css'
+
+export default function Drawer({ children, direction, className, menuItems }) {
     const [state, setState] = React.useState({
         top: false,
         left: false,
@@ -38,27 +39,20 @@ export default function SwipeableTemporaryDrawer({ children, direction, classNam
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InsertChart /> : <Mail />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
             <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InsertChart /> : <Mail />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+            {menuItems &&
+                <List>
+                    {menuItems.map((menuItem) => (
+                        <ListItem button key={menuItem.text}>
+                            <ListItemIcon>
+                                {menuItem.icon}
+                            </ListItemIcon>
+                            <ListItemText primary={menuItem.text} />
+                        </ListItem>
+                    ))}
+                </List>
+            }
+            <Divider />
         </Box>
     );
 

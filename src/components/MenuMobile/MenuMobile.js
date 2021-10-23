@@ -3,7 +3,10 @@ import { IconMenu } from '../Icons/Icons'
 
 const MenuMobile = () => {
     return (
-        <Drawer direction="left">
+        <Drawer
+            direction="left"
+            className="drawerMenu"
+        >
             <IconMenu />
         </Drawer>
     )
